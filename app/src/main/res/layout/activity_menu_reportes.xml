@@ -8,52 +8,69 @@
     android:background="#F5F5F5"
     tools:context=".MenuReportesActivity">
 
+    <ImageView
+        android:id="@+id/imgFondo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_luz_agua"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <!-- Título -->
     <TextView
         android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hacer Reporte de:"
+        android:layout_marginTop="108dp"
+        android:text="Reporta aqui:"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#333"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="80dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Botón de Agua -->
+
+    <!-- Botón de Luz -->
+
     <Button
         android:id="@+id/btnAgua"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Agua 💧"
-        android:textSize="18sp"
-        android:backgroundTint="#2196F3"
-        android:textColor="#FFF"
-        app:layout_constraintTop_toBottomOf="@id/txtTitulo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="50dp"
         android:layout_marginStart="60dp"
+        android:layout_marginTop="152dp"
         android:layout_marginEnd="60dp"
-        android:padding="10dp"/>
+        android:backgroundTint="#2196F3"
+        android:padding="10dp"
+        android:text="Agua"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitulo" />
 
-    <!-- Botón de Luz -->
     <Button
         android:id="@+id/btnLuz"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Luz 💡"
-        android:textSize="18sp"
-        android:backgroundTint="#FF9800"
-        android:textColor="#FFF"
-        app:layout_constraintTop_toBottomOf="@id/btnAgua"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp"
         android:layout_marginStart="60dp"
+        android:layout_marginTop="204dp"
         android:layout_marginEnd="60dp"
-        android:padding="10dp"/>
+        android:backgroundTint="#FF9800"
+        android:padding="10dp"
+        android:text="Luz"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAgua" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
